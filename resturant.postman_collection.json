@@ -1,0 +1,2297 @@
+{
+	"info": {
+		"_postman_id": "199184df-1236-48a9-b73f-5802b3761d1b",
+		"name": "new",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "employee",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_number",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "mohammed",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/employee/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"employee",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_number",
+											"value": "1000",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "mohammed",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/employee/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"employee",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 21:49:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "483"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3OTc4MDk2MywiaWF0IjoxNjc5Njk0NTYzLCJqdGkiOiJlZjkyMzhjM2FlMjY0OTczYmUxYzBkMmMyODI4OTgzYyIsInVzZXJfaWQiOjF9.9l2Kpvu-vA5urB5lIpEt8sxMt7onj7pbP2067sYW-nE\",\n    \"access\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5Njk0ODYzLCJpYXQiOjE2Nzk2OTQ1NjMsImp0aSI6IjE5OTE2OTM1N2NhNzRhNDNiZjZjMzY2MDkwZjc5ZWYwIiwidXNlcl9pZCI6MX0.LmcZ4Sb_3FyIg7z31XW1MWZdEOjQ224jbrMPGpNxgJM\"\n}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5Njk1NTAwLCJpYXQiOjE2Nzk2OTUyMDAsImp0aSI6IjljNTA0MjMwNDEyOTRmYTFiMzc5MWFmMjAyMjc3OTlmIiwidXNlcl9pZCI6MX0.XwwdF3EOvX2arQ-eGQnied_SmJ33mrFmUH3La4aqlNc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_number",
+									"value": "1031",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "mohammed",
+									"type": "text"
+								},
+								{
+									"key": "password2",
+									"value": "mohammed",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/employee/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"employee",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_number",
+											"value": "1031",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "mohammed",
+											"type": "text"
+										},
+										{
+											"key": "password2",
+											"value": "mohammed",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Employee",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/employee/register",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"employee",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 22:00:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user_number\": 1031,\n    \"role\": \"Employee\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "table",
+			"item": [
+				{
+					"name": "create new table",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5Njk1MTc3LCJpYXQiOjE2Nzk2OTQ4NzcsImp0aSI6IjNmMDcxNzFkOWFiMTRlYzA4MWJkNzhkZTQ2ZWQzZDM1IiwidXNlcl9pZCI6MX0.QYYaEt0lG9mT9l6bllqouhwbj9kMX_5JX24DSvLfGFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "table_number",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "number_of_seats",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/table/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"table",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create new table",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "table_number",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "number_of_seats",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/create",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 21:54:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"table_number\": 12,\n    \"created_by\": \"1000\",\n    \"number_of_seats\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "delete table",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5Njk1MTc3LCJpYXQiOjE2Nzk2OTQ4NzcsImp0aSI6IjNmMDcxNzFkOWFiMTRlYzA4MWJkNzhkZTQ2ZWQzZDM1IiwidXNlcl9pZCI6MX0.QYYaEt0lG9mT9l6bllqouhwbj9kMX_5JX24DSvLfGFw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/table/delete/12",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"table",
+								"delete",
+								"12"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete table",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/delete/12",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"delete",
+										"12"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 21:56:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "DELETE, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "get tables",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NzM2NzQ0LCJpYXQiOjE2Nzk3MzY0NDQsImp0aSI6Ijc0NmE2NTNlNGYxYzRhY2ZhM2RmMWM2NWI0OWJkNjk5IiwidXNlcl9pZCI6MX0.UmtYV87OOzj77n8a8B9EKDPkZ4KkP-BVafUFAQ_DUdA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/table/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"table",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get tables",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/list",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 09:27:39 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "234"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 3,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"table_number\": 12222,\n            \"created_by\": \"1000\",\n            \"number_of_seats\": 2\n        },\n        {\n            \"table_number\": 12,\n            \"created_by\": \"1000\",\n            \"number_of_seats\": 12\n        },\n        {\n            \"table_number\": 1,\n            \"created_by\": \"1013\",\n            \"number_of_seats\": 4\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "reservation",
+			"item": [
+				{
+					"name": "get all reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5Njk3Mjc0LCJpYXQiOjE2Nzk2OTY5NzQsImp0aSI6ImQ4MzRiMzFjYjQ0ZTRiNTI4ZGI0YjE3MjhlZDliMDRmIiwidXNlcl9pZCI6MX0.U0vvT52pNMWyYm3xmchAOAc7BYvF7qhDX9o1eENOPUE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/reservation/all?date_after=2023-03-24&date_before=2023-03-24&table__table_number=12222",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"reservation",
+								"all"
+							],
+							"query": [
+								{
+									"key": "date_after",
+									"value": "2023-03-24"
+								},
+								{
+									"key": "date_before",
+									"value": "2023-03-24"
+								},
+								{
+									"key": "table__table_number",
+									"value": "12222"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all reservation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/reservation/all?date_after=2023-03-24&date_before=2023-03-24&table__table_number=12222",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"reservation",
+										"all"
+									],
+									"query": [
+										{
+											"key": "date_after",
+											"value": "2023-03-24"
+										},
+										{
+											"key": "date_before",
+											"value": "2023-03-24"
+										},
+										{
+											"key": "table__table_number",
+											"value": "12222"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 22:30:46 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "233"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"start_time\": \"21:35:45\",\n            \"end_time\": \"01:35:48\",\n            \"date\": \"2023-03-24\",\n            \"number_of_people\": 1,\n            \"client_name\": \"Hamdy\",\n            \"client_phone_number\": \"1\",\n            \"notes\": \"\",\n            \"employee\": 1,\n            \"table\": 12222\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get available time slots",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NzQ0MzkwLCJpYXQiOjE2Nzk3NDQwOTAsImp0aSI6IjllYzg4YWU5MTdiNTQ5MDdiZjZmMmY0NGQwMmUxOTNkIiwidXNlcl9pZCI6MX0.Pm9m3sUf6qW8t51yJMPd3cWYMAy0e7IjLMT0yX6koSw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/reservation/check-available-slots/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"reservation",
+								"check-available-slots",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get available time slots",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/reservation/check-available-slots/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"reservation",
+										"check-available-slots",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 11:35:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "123"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"1\": [\n        {\n            \"from\": \" 12:00 PM\",\n            \"to\": \"11:59 PM\"\n        }\n    ],\n    \"12\": [\n        {\n            \"from\": \"01:35 PM\",\n            \"to\": \"12:40 AM\"\n        },\n        {\n            \"from\": \"10:59 PM\",\n            \"to\": \"11:59 PM\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "get available time slots 1 table available",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/reservation/check-available-slots/12",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"reservation",
+										"check-available-slots",
+										"12"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 11:35:37 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"12\": [\n        {\n            \"from\": \"01:35 PM\",\n            \"to\": \"12:40 AM\"\n        },\n        {\n            \"from\": \"10:59 PM\",\n            \"to\": \"11:59 PM\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "get available time slots for more than 12 seats",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/reservation/check-available-slots/13",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"reservation",
+										"check-available-slots",
+										"13"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 11:36:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"number_of_seats\": \"should be between 1 to 12\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get today reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5Njk4Njk2LCJpYXQiOjE2Nzk2OTgzOTYsImp0aSI6ImJkZWU4NGYwOWUyNjRiODk5NTY2NmY2NjFlODk4YWRiIiwidXNlcl9pZCI6MX0.J-Vn9_4Ty43CBxOwfCUkFMEx9aQilUpNk9ksDb46v2g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/reservation/today?ordering=-start_time",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"reservation",
+								"today"
+							],
+							"query": [
+								{
+									"key": "ordering",
+									"value": "-start_time"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all reservation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/reservation/all?date_after=2023-03-24&date_before=2023-03-24&table__table_number=12222",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"reservation",
+										"all"
+									],
+									"query": [
+										{
+											"key": "date_after",
+											"value": "2023-03-24"
+										},
+										{
+											"key": "date_before",
+											"value": "2023-03-24"
+										},
+										{
+											"key": "table__table_number",
+											"value": "12222"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 22:30:46 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "233"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"start_time\": \"21:35:45\",\n            \"end_time\": \"01:35:48\",\n            \"date\": \"2023-03-24\",\n            \"number_of_people\": 1,\n            \"client_name\": \"Hamdy\",\n            \"client_phone_number\": \"1\",\n            \"notes\": \"\",\n            \"employee\": 1,\n            \"table\": 12222\n        }\n    ]\n}"
+						},
+						{
+							"name": "get today reservation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/reservation/today?ordering=-start_time",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"reservation",
+										"today"
+									],
+									"query": [
+										{
+											"key": "ordering",
+											"value": "-start_time"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 22:54:16 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "418"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 2,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 3,\n            \"start_time\": \"22:40:54\",\n            \"end_time\": \"22:40:54\",\n            \"date\": \"2023-03-25\",\n            \"client_name\": \"Hamdy\",\n            \"client_phone_number\": \"12\",\n            \"notes\": \"\",\n            \"number_of_people\": 1,\n            \"employee\": 3,\n            \"table\": 12\n        },\n        {\n            \"id\": 2,\n            \"start_time\": \"22:37:31\",\n            \"end_time\": \"22:37:32\",\n            \"date\": \"2023-03-25\",\n            \"client_name\": \"Hamdy\",\n            \"client_phone_number\": \"12\",\n            \"notes\": \"21\",\n            \"number_of_people\": 10,\n            \"employee\": 13,\n            \"table\": 12222\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "delete reservation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5Njk4ODM5LCJpYXQiOjE2Nzk2OTg1MzksImp0aSI6ImI4OGI2NTIwNjA3MDQzYTI5ZDFkNGJjODIxYTJjNzgyIiwidXNlcl9pZCI6MX0.XHuYwJsRBFzyBJVupWwW3VAvNcU6-9bEaXy3jdkD0AI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/reservation/delete/12",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"reservation",
+								"delete",
+								"12"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete reservation",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/reservation/delete/12",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"reservation",
+										"delete",
+										"12"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 22:55:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "DELETE, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "23"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Not found.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "reserve table",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5NzQ2MzE0LCJpYXQiOjE2Nzk3NDYwMTQsImp0aSI6ImUyMzY4ZTdjNzg2OTRlZmQ4NDkwNzgyZDY2OTkxMTE2IiwidXNlcl9pZCI6MX0.SZHIglfpQ3WpDsxBgNTdGV0cfDqxaEp_TMp57aPGUjc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "start_time",
+									"value": "14:15",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "14:50",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2023-03-25",
+									"type": "text"
+								},
+								{
+									"key": "employee",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "table",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "client_name",
+									"value": "Helmy",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "client_phone_number",
+									"value": "0126",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "notes",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "number_of_people",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/table/reserve",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"table",
+								"reserve"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "reserve table start time more than end time",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "14:10",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "13:58",
+											"type": "text"
+										},
+										{
+											"key": "date",
+											"value": "2023-03-25",
+											"type": "text"
+										},
+										{
+											"key": "employee",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "table",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "client_name",
+											"value": "Helmy",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "client_phone_number",
+											"value": "0126",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "notes",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "number_of_people",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/reserve",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"reserve"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 12:55:04 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"End time must be after start time.\"\n    ]\n}"
+						},
+						{
+							"name": "good reserve table",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "14:10",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "14:58",
+											"type": "text"
+										},
+										{
+											"key": "date",
+											"value": "2023-03-25",
+											"type": "text"
+										},
+										{
+											"key": "employee",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "table",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "client_name",
+											"value": "Helmy",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "client_phone_number",
+											"value": "0126",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "notes",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "number_of_people",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/reserve",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"reserve"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 12:57:04 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 10,\n    \"start_time\": \"14:10:00\",\n    \"end_time\": \"14:58:00\",\n    \"date\": \"2023-03-25\",\n    \"client_name\": null,\n    \"client_phone_number\": null,\n    \"notes\": null,\n    \"number_of_people\": null,\n    \"employee\": null,\n    \"table\": 1\n}"
+						},
+						{
+							"name": "table have another reservation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "14:15",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "14:50",
+											"type": "text"
+										},
+										{
+											"key": "date",
+											"value": "2023-03-25",
+											"type": "text"
+										},
+										{
+											"key": "employee",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "table",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "client_name",
+											"value": "Helmy",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "client_phone_number",
+											"value": "0126",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "notes",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "number_of_people",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/reserve",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"reserve"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 12:57:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"Table have reservation at this time\"\n    ]\n}"
+						},
+						{
+							"name": "reserve table",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "14:15",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "14:50",
+											"type": "text"
+										},
+										{
+											"key": "date",
+											"value": "2023-03-25",
+											"type": "text"
+										},
+										{
+											"key": "employee",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "table",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "client_name",
+											"value": "Helmy",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "client_phone_number",
+											"value": "0126",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "notes",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "number_of_people",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/reserve",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"reserve"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 12:58:21 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "WWW-Authenticate",
+									"value": "Bearer realm=\"api\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "183"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Given token not valid for any token type\",\n    \"code\": \"token_not_valid\",\n    \"messages\": [\n        {\n            \"token_class\": \"AccessToken\",\n            \"token_type\": \"access\",\n            \"message\": \"Token is invalid or expired\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "reserve table in past date",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "14:15",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "14:50",
+											"type": "text"
+										},
+										{
+											"key": "date",
+											"value": "2023-03-23",
+											"type": "text"
+										},
+										{
+											"key": "employee",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "table",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "client_name",
+											"value": "Helmy",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "client_phone_number",
+											"value": "0126",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "notes",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "number_of_people",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/reserve",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"reserve"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 13:21:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"Date must be in future.\"\n    ]\n}"
+						},
+						{
+							"name": "reserve table in past time",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "17:15",
+											"type": "text"
+										},
+										{
+											"key": "end_time",
+											"value": "18:50",
+											"type": "text"
+										},
+										{
+											"key": "date",
+											"value": "2023-03-25",
+											"type": "text"
+										},
+										{
+											"key": "employee",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "table",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "client_name",
+											"value": "Helmy",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "client_phone_number",
+											"value": "0126",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "notes",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "number_of_people",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/reserve",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"reserve"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 13:23:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"start time must be in future.\"\n    ]\n}"
+						},
+						{
+							"name": "required fields errors",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "start_time",
+											"value": "14:15",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "end_time",
+											"value": "14:50",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "date",
+											"value": "2023-03-25",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "employee",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "table",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "client_name",
+											"value": "Helmy",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "client_phone_number",
+											"value": "0126",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "notes",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "number_of_people",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/table/reserve",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"table",
+										"reserve"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 25 Mar 2023 13:25:21 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "152"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"start_time\": [\n        \"This field is required.\"\n    ],\n    \"end_time\": [\n        \"This field is required.\"\n    ],\n    \"date\": [\n        \"This field is required.\"\n    ],\n    \"table\": [\n        \"This field is required.\"\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
